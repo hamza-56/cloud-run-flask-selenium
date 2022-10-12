@@ -7,10 +7,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Test secrets
-    with open('/etc/secrets/id/admin-id') as admin_id, open('/etc/secrets/pw/admin-pw') as admin_pw:
-        test_id = admin_id.read()
-        test_pw = admin_pw.read()
-        print(test_id, test_pw)
+    # with open('/etc/secrets/id/admin-id') as admin_id, open('/etc/secrets/pw/admin-pw') as admin_pw:
+    #     test_id = admin_id.read()
+    #     test_pw = admin_pw.read()
+    #     print(test_id, test_pw)
 
     # Test Selenium
     from selenium import webdriver
