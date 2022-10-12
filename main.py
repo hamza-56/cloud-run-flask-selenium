@@ -1,4 +1,4 @@
-from flask import Flask, send_file
+from flask import Flask, send_file, jsonify
 import chromedriver_binary  # Adds chromedriver binary to path
 
 app = Flask(__name__)
@@ -24,3 +24,7 @@ def index():
     browser.get('https://www.google.com/search?q=headless+horseman&tbm=isch')
     browser.save_screenshot('spooky.png')
     return send_file('spooky.png')
+
+@app.route('/test-cloud-build')
+def test():
+    return jsonify(test='success')
