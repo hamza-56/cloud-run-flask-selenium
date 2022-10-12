@@ -29,8 +29,8 @@ steps:
       - '1024Mi'
       - '--timeout'
       - '1800'
-      - '--update-secrets'
-      - '/etc/secrets/id/admin-id=projects/66239888090/secrets/id:latest,/etc/secrets/pw/admin-pw=projects/66239888090/secrets/pw:latest'
+      # - '--update-secrets'
+      # - '/etc/secrets/id/admin-id=projects/66239888090/secrets/id:latest,/etc/secrets/pw/admin-pw=projects/66239888090/secrets/pw:latest'
 
 substitutions:
   _SERVICE_FOLDER: .
